@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react";
-import { Button } from "./ui/button";
+import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
@@ -22,31 +21,31 @@ const Header = () => {
   ];
 
   return (
-   <header className="relative w-full bg-white shadow-soft">
-
-      {/* Top Bar */}
+    // ✅ Made sticky
+    <header className="sticky top-0 z-50 w-full bg-white shadow-soft">
+      {/* 
+      // 🔵 Top Bar (commented out for now)
       <div className="hidden md:block bg-secondary text-white py-1.5 text-sm">
-
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
           <div className="flex flex-wrap items-center gap-4">
             <a href="tel:+91-9045000118" className="flex items-center gap-2 hover:text-primary transition-smooth">
               <Phone className="h-4 w-4" />
               <span className="font-poppins">+91-9045000118</span>
             </a>
-            <a href="mailto:info@ramnaambank.org" className="flex items-center gap-2 hover:text-primary transition-smooth">
+            <a href="mailto:raamnaambank@gmail.com" className="flex items-center gap-2 hover:text-primary transition-smooth">
               <Mail className="h-4 w-4" />
               <span className="font-poppins">raamnaambank@gmail.com</span>
             </a>
-           
           </div>
           <Button variant="link" className="text-white hover:text-primary font-hind text-base" asChild>
             <a href="#donation">दान करें 🙏</a>
           </Button>
         </div>
       </div>
+      */}
 
       {/* Main Navigation */}
-      <nav className="container mx-auto px-4 py-2">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">

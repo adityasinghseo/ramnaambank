@@ -10,10 +10,12 @@ const MembershipForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    role: "",
+    fatherHusband: "",
+    dob: "",
     phone: "",
+    email: "",
     address: "",
-    interest: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,14 +26,16 @@ const MembershipForm = () => {
     });
     setFormData({
       name: "",
-      email: "",
+      role: "",
+      fatherHusband: "",
+      dob: "",
       phone: "",
+      email: "",
       address: "",
-      interest: "",
     });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -55,9 +59,10 @@ const MembershipForm = () => {
             </CardHeader>
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Name */}
                 <div>
                   <Label htmlFor="name" className="font-hind text-base">
-                    पूरा नाम *
+                    नाम *
                   </Label>
                   <Input
                     id="name"
@@ -70,25 +75,64 @@ const MembershipForm = () => {
                   />
                 </div>
 
+                {/* Role */}
                 <div>
-                  <Label htmlFor="email" className="font-hind text-base">
-                    ईमेल *
+                  <Label htmlFor="role" className="font-hind text-base">
+                    आप संस्था में क्या बनना चाहते हैं? *
                   </Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    value={formData.email}
+                  <select
+                    id="role"
+                    name="role"
+                    value={formData.role}
                     onChange={handleChange}
                     required
-                    className="mt-2 font-poppins"
-                    placeholder="example@email.com"
+                    className="mt-2 w-full border border-gray-300 rounded-md p-2 font-hind focus:ring-primary focus:border-primary"
+                  >
+                    <option value="">चयन करें</option>
+                    <option value="सदस्य">सदस्य</option>
+                    <option value="आजीवन सदस्य">आजीवन सदस्य</option>
+                    <option value="स्वयंसेवी">स्वयंसेवी</option>
+                    <option value="पदाधिकारी">पदाधिकारी</option>
+                    <option value="प्रचारक">प्रचारक</option>
+                  </select>
+                </div>
+
+                {/* Father/Husband Name */}
+                <div>
+                  <Label htmlFor="fatherHusband" className="font-hind text-base">
+                    पिता / पति का नाम *
+                  </Label>
+                  <Input
+                    id="fatherHusband"
+                    name="fatherHusband"
+                    value={formData.fatherHusband}
+                    onChange={handleChange}
+                    required
+                    className="mt-2 font-hind"
+                    placeholder="पिता या पति का नाम दर्ज करें"
                   />
                 </div>
 
+                {/* DOB */}
+                <div>
+                  <Label htmlFor="dob" className="font-hind text-base">
+                    जन्मतिथि *
+                  </Label>
+                  <Input
+                    id="dob"
+                    name="dob"
+                    type="date"
+                    value={formData.dob}
+                    onChange={handleChange}
+                    required
+                    className="mt-2 font-hind"
+                  />
+                </div>
+
+                {/* Phone */}
                 <div>
                   <Label htmlFor="phone" className="font-hind text-base">
-                    फ़ोन नंबर *
+                    संपर्क सूत्र (मोबाइल नंबर) *
                   </Label>
                   <Input
                     id="phone"
@@ -102,38 +146,43 @@ const MembershipForm = () => {
                   />
                 </div>
 
+                {/* Email */}
+                <div>
+                  <Label htmlFor="email" className="font-hind text-base">
+                    ईमेल आईडी *
+                  </Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="mt-2 font-poppins"
+                    placeholder="example@email.com"
+                  />
+                </div>
+
+                {/* Address */}
                 <div>
                   <Label htmlFor="address" className="font-hind text-base">
-                    पता
+                    पता *
                   </Label>
                   <Textarea
                     id="address"
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
+                    required
                     className="mt-2 font-hind"
-                    placeholder="अपना पता दर्ज करें"
+                    placeholder="पूरा पता दर्ज करें"
                     rows={3}
                   />
                 </div>
 
-                <div>
-                  <Label htmlFor="interest" className="font-hind text-base">
-                    आध्यात्मिक रुचि
-                  </Label>
-                  <Textarea
-                    id="interest"
-                    name="interest"
-                    value={formData.interest}
-                    onChange={handleChange}
-                    className="mt-2 font-hind"
-                    placeholder="राम नाम लेखन, भजन-कीर्तन, सत्संग आदि"
-                    rows={3}
-                  />
-                </div>
-
-                <Button 
-                  type="submit" 
+                {/* Submit Button */}
+                <Button
+                  type="submit"
                   className="w-full gradient-devotional text-white hover:opacity-90 shadow-devotional font-hind text-lg"
                   size="lg"
                 >

@@ -1,5 +1,7 @@
 import { Facebook, Youtube, Instagram, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import androidIcon from "@/assets/android.png";
+import appleIcon from "@/assets/apple.png";
 
 const Footer = () => {
   const quickLinks = [
@@ -43,10 +45,11 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* App Download Buttons inside left section */}
+            {/* App Download Buttons */}
             <div>
               <h3 className="text-lg font-bold mb-3 font-hind">हमारा मोबाइल ऐप डाउनलोड करें</h3>
               <div className="flex flex-wrap gap-3">
+                {/* Google Play */}
                 <a
                   href="https://play.google.com/store/apps/details?id=com.shri.rnvbs"
                   target="_blank"
@@ -54,7 +57,11 @@ const Footer = () => {
                   className="inline-block bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-smooth"
                 >
                   <div className="flex items-center gap-2">
-                    <div className="text-2xl">📱</div>
+                    <img
+                      src={androidIcon}
+                      alt="Google Play"
+                      className="h-6 w-6 object-contain filter invert brightness-200"
+                    />
                     <div className="text-left">
                       <div className="text-xs text-white/70 font-poppins">Download on</div>
                       <div className="text-sm font-bold font-poppins">Google Play</div>
@@ -62,12 +69,19 @@ const Footer = () => {
                   </div>
                 </a>
 
+                {/* Apple App Store */}
                 <a
-                  href="#"
+                  href="https://apps.apple.com/in/app/ram-naam/id6746091971"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-smooth"
                 >
                   <div className="flex items-center gap-2">
-                    <div className="text-2xl">🍎</div>
+                    <img
+                      src={appleIcon}
+                      alt="App Store"
+                      className="h-6 w-6 object-contain filter invert brightness-200"
+                    />
                     <div className="text-left">
                       <div className="text-xs text-white/70 font-poppins">Download on</div>
                       <div className="text-sm font-bold font-poppins">App Store</div>
@@ -84,10 +98,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-white/80 hover:text-primary transition-smooth font-hind"
-                  >
+                  <a href={link.href} className="text-white/80 hover:text-primary transition-smooth font-hind">
                     {link.label}
                   </a>
                 </li>
@@ -128,10 +139,7 @@ const Footer = () => {
 
               <li className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                <a
-                  href="mailto:raamnaambank@gmail.com"
-                  className="hover:text-primary font-poppins"
-                >
+                <a href="mailto:raamnaambank@gmail.com" className="hover:text-primary font-poppins">
                   raamnaambank@gmail.com
                 </a>
               </li>
