@@ -8,13 +8,13 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "हमारे बारे में", href: "#about" },
+    { label: "हमारे बारे में", href: "/about" },
     { label: "राम नाम जमा करें", href: "#ram-naam" },
     { label: "सदस्य बनें", href: "#membership" },
     { label: "लेखन सामग्री", href: "#lekhan" },
     { label: "योजनाएं", href: "#yojana" },
     { label: "ज्योतिष फलादेश", href: "#jyotish" },
-    { label: "दान करें", href: "#donation" },
+    { label: "दान करें", href: "/donation" },
     { label: "गैलरी", href: "#gallery" },
     { label: "लेटेस्ट अपडेट", href: "#news" },
     { label: "Shop", href: "#shop" },

@@ -36,7 +36,7 @@ const MembershipForm = () => {
   };
 
   return (
-    <section id="join" id="membership" className="py-20 bg-cream">
+    <section id="membership" className="py-20 bg-cream">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-4 font-hind">
