@@ -1,9 +1,9 @@
 import { Card } from "./ui/card";
-import rampic from "@/assets/rampic.png";
+import ramVideo from "@/assets/videos/ram2.mp4";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-cream overflow-hidden">
+    <section id="about" className="py-20 bg-[#fffaf0] overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Title */}
         <div className="text-center mb-14 animate-fade-in-up">
@@ -19,12 +19,15 @@ const About = () => {
 
         {/* Content Row */}
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
-          {/* Left Image */}
-          <div className="relative group animate-fade-in-up flex justify-center">
-            <img
-              src={rampic}
-              alt="Shri Ram"
-              className="w-full max-w-lg transition-transform duration-700 group-hover:scale-110 drop-shadow-2xl"
+          {/* Left Video */}
+          <div className="relative animate-fade-in-up flex justify-center">
+            <video
+              src={ramVideo}
+              className="w-full max-w-lg rounded-lg object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
             />
           </div>
 

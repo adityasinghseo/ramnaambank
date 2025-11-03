@@ -8,6 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
+    { label: "होम", href: "/" },
     { label: "हमारे बारे में", href: "/about" },
     { label: "राम नाम जमा करें", href: "/ram-naam" },
     { label: "सदस्य बनें", href: "/membership" },
@@ -21,9 +22,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-soft">
+   <header className="relative w-full bg-white shadow-soft">
+
       {/* Top Bar */}
-      <div className="bg-secondary text-white py-3">
+      <div className="hidden md:block bg-secondary text-white py-1.5 text-sm">
+
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center text-sm">
           <div className="flex flex-wrap items-center gap-4">
             <a href="tel:+91-9045000118" className="flex items-center gap-2 hover:text-primary transition-smooth">
@@ -32,11 +35,9 @@ const Header = () => {
             </a>
             <a href="mailto:info@ramnaambank.org" className="flex items-center gap-2 hover:text-primary transition-smooth">
               <Mail className="h-4 w-4" />
-              <span className="font-poppins">info@ramnaambank.org</span>
+              <span className="font-poppins">raamnaambank@gmail.com</span>
             </a>
-            <span className="hidden md:flex items-center gap-2 text-white/90 font-hind">
-              📍 राम नाम बैंक, श्रीराम मंदिर, अयोध्या रोड, फैजाबाद
-            </span>
+           
           </div>
           <Button variant="link" className="text-white hover:text-primary font-hind text-base" asChild>
             <a href="#donation">दान करें 🙏</a>
@@ -45,11 +46,11 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="श्री राम नाम विश्व बैंक समिति" className="h-16 md:h-20 w-auto" />
+            <img src={logo} alt="श्री राम नाम विश्व बैंक समिति" className="h-14 md:h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

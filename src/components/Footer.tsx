@@ -10,9 +10,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Facebook, href: "https://www.facebook.com/people/Shriramnaambank/61556191174978/", label: "Facebook" },
+    { icon: Youtube, href: "https://www.youtube.com/@raamnaambank", label: "YouTube" },
+    { icon: Instagram, href: "https://www.instagram.com/ramnaambank/", label: "Instagram" },
     { icon: MessageCircle, href: "https://wa.me/919045000108", label: "WhatsApp" },
   ];
 
@@ -99,7 +99,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 font-hind">संपर्क जानकारी</h3>
             <ul className="space-y-3 text-white/80 font-hind">
-                            <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2">
                 <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <span>
                   <a href="tel:+91-9045000108" className="hover:text-primary">+91-9045000108</a>,{" "}
@@ -135,29 +135,28 @@ const Footer = () => {
                   raamnaambank@gmail.com
                 </a>
               </li>
-             
             </ul>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-white/10 pt-6 text-center">
-  <p className="text-white/70 font-hind text-sm flex flex-col md:flex-row items-center justify-center gap-2">
-    <span>© 2025 श्री राम नाम विश्व बैंक समिति। सर्वाधिकार सुरक्षित।</span>
-    <span>Developed by{" "}
-      <a
-        href="https://www.marketingwale.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:underline font-semibold"
-      >
-        Marketing Wale™
-      </a>
-    </span>
-    <span>जय श्री राम 🙏</span>
-  </p>
-</div>
-
+          <p className="text-white/70 font-hind text-sm flex flex-col md:flex-row items-center justify-center gap-2">
+            <span>© 2025 श्री राम नाम विश्व बैंक समिति। सर्वाधिकार सुरक्षित।</span>
+            <span>
+              Developed by{" "}
+              <a
+                href="https://www.marketingwale.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-semibold"
+              >
+                Marketing Wale™
+              </a>
+            </span>
+            <span>जय श्री राम 🙏</span>
+          </p>
+        </div>
       </div>
     </footer>
   );

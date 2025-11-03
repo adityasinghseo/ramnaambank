@@ -7,7 +7,6 @@ import Faq from "@/components/FAQ"
 import Team from "@/components/Team"
 import Social from "@/components/SocialInitiatives"
 import Cta from "@/components/CallToAction"
-import Donation from "@/components/Donation";
 import Events from "@/components/Events";
 import News from "@/components/News";
 import Footer from "@/components/Footer";
@@ -25,7 +24,6 @@ const Index = () => {
         <Team />
         <Social />
         <Cta/>
-        <Donation />
         <Events />
         <News />
       </main>
