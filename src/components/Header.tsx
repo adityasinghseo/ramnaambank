@@ -9,16 +9,15 @@ const Header = () => {
 
   const navItems = [
     { label: "हमारे बारे में", href: "/about" },
-    { label: "राम नाम जमा करें", href: "#ram-naam" },
-    { label: "सदस्य बनें", href: "#membership" },
-    { label: "लेखन सामग्री", href: "#lekhan" },
-    { label: "योजनाएं", href: "#yojana" },
-    { label: "ज्योतिष फलादेश", href: "#jyotish" },
+    { label: "राम नाम जमा करें", href: "/ram-naam" },
+    { label: "सदस्य बनें", href: "/membership" },
+    { label: "लेखन सामग्री", href: "/lekhan" },
+    { label: "योजनाएं", href: "/yojana" },
+    { label: "ज्योतिष फलादेश", href: "/jyotish" },
     { label: "दान करें", href: "/donation" },
-    { label: "गैलरी", href: "#gallery" },
-    { label: "लेटेस्ट अपडेट", href: "#news" },
-    { label: "Shop", href: "#shop" },
-    { label: "संपर्क करें", href: "#contact" },
+    { label: "गैलरी", href: "/gallery" },
+    { label: "लेटेस्ट अपडेट", href: "/news" },
+    { label: "संपर्क करें", href: "/contact" },
   ];
 
   return (
@@ -56,13 +55,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-foreground hover:text-primary transition-smooth font-medium text-lg"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -85,14 +84,14 @@ const Header = () => {
           <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col gap-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="text-foreground hover:text-primary transition-smooth font-medium text-lg"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
