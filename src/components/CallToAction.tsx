@@ -1,4 +1,4 @@
-import { Building2, Users2, HandHeart, Mail } from "lucide-react";
+import { Building2, Users2, HandHeart } from "lucide-react";
 import kalash from "@/assets/kalash.png";
 
 const highlights = [
@@ -60,26 +60,29 @@ const CallToAction = () => {
               href="https://wa.me/919045000108"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-3xl md:text-4xl font-bold text-white drop-shadow font-hind"
+              className="text-3xl md:text-4xl font-bold text-white drop-shadow font-hind hover:text-white/90 transition-colors"
             >
               +91-9045000108
             </a>
           </div>
 
-          {/* Newsletter Box */}
-          <div className="flex flex-col items-center md:items-end gap-3 w-full md:w-auto">
-            <p className="text-white/90 text-lg font-semibold font-hind">Our Newsletter</p>
-            <div className="flex bg-white/20 rounded-full overflow-hidden backdrop-blur-md shadow-inner w-full max-w-xs md:max-w-sm">
-              <input
-                type="email"
-                placeholder="Enter email address"
-                className="flex-1 px-5 py-3 text-white placeholder-white/80 bg-transparent font-hind focus:outline-none"
+          {/* WhatsApp Icon */}
+          <div className="flex-shrink-0 animate-pulse">
+            <a
+              href="https://wa.me/919045000108"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block transition-transform hover:scale-110 duration-300"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                alt="WhatsApp"
+                className="w-16 h-16 md:w-20 md:h-20 drop-shadow-lg"
               />
-              <button className="bg-white text-primary px-5 py-3 hover:bg-white/90 transition-all">
-                <Mail className="w-5 h-5" />
-              </button>
-            </div>
+            </a>
           </div>
+
+
         </div>
       </div>
     </section>

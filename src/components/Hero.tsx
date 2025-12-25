@@ -1,60 +1,65 @@
 import { Button } from "./ui/button";
-import heroVideo from "@/assets/videos/ayodhya.mp4";
+import ramPic from "@/assets/ramji-pic-for-hero-section.webp";
+import heroBg from "@/assets/hero-section-background-banner.webp";
 
 const Hero = () => {
   return (
-    <section className="relative w-full overflow-hidden">
-      {/* Background Video */}
-      <div className="w-full relative">
-        <video
-          src={heroVideo}
-          className="w-full h-auto block"
-          autoPlay
-          muted
-          loop
-          playsInline
+    <section className="relative w-full min-h-[600px] lg:min-h-[700px] flex md:items-end overflow-hidden">
+      {/* Background Image - Full Cover */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src={heroBg}
+          alt="Hero Background"
+          className="w-full h-full object-cover"
         />
+        {/* Optional lightweight overlay for text readability if background is busy */}
+        <div className="absolute inset-0 bg-black/5" />
       </div>
 
-      {/* Hero Content */}
-      <div className="absolute inset-0 z-10 flex items-center">
-        <div className="container mx-auto px-4 md:px-12">
-          <div className="max-w-2xl animate-fade-in-up text-left md:pt-10">
-            {/* Jai Shri Ram Badge */}
-            <span className="inline-flex items-center gap-2 px-2 py-0.5 md:px-3 md:py-1 rounded-full bg-primary/20 text-primary font-semibold text-[10px] md:text-base">
-              <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-primary animate-pulse" /> ।। जय श्री राम ।।
-            </span>
+      <div className="container mx-auto px-4 md:px-12 relative z-10 w-full md:pb-0 h-full flex flex-col md:flex-row items-center md:items-end justify-between">
 
-            <h1 className="font-hind text-xl md:text-6xl font-extrabold text-white mt-1 md:mt-4 leading-tight drop-shadow-lg">
-              आओ चलें काम से <br /> राम की ओर...
-            </h1>
+        {/* Left Content */}
+        <div className="w-full md:w-1/2 pt-24 md:pt-20 md:pb-24 flex flex-col justify-center animate-fade-in-up text-center md:text-left z-20">
+          {/* Jai Shri Ram Badge */}
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white font-semibold text-xs md:text-sm mb-4 md:mb-6 border border-white/30 self-center md:self-start">
+            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-yellow-400 animate-pulse" />
+            ।। जय श्री राम ।।
+            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-yellow-400 animate-pulse" />
+          </div>
 
-            {/* Description */}
-            <p className="text-white/90 mt-1 md:mt-4 text-[9px] leading-tight md:text-xl md:leading-relaxed font-hind max-w-xl">
-              प्रिय भक्तगण,<br />
-              श्री राम नाम विश्व बैंक समिति द्वारा संचालित सेवा कार्यों में जैसे, श्री राम नाम लेखन सामग्री,
-              श्री राम नाम संग्रहालय, गौशाला, अस्पताल, श्री राम आश्रय, गंगा घाट व मंदिर निर्माण, अन्नक्षेत्र,
-              शिक्षण सामग्री, वृक्षारोपण, मोक्षधाम आदि कार्यों में योगदान देकर पुण्य प्राप्त कर सकते है।
-              क्योंकि कलयुग में दान का ही महत्व है।
-            </p>
+          <h1 className="font-hindi text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight drop-shadow-lg mb-4 md:mb-6">
+            आओ चलें काम से <br />
+            <span className="text-yellow-200">राम की ओर...</span>
+          </h1>
 
-            {/* CTA Button */}
-            <div className="mt-2 md:mt-8 flex flex-wrap items-center gap-4">
-              <a href="/donation">
-                <Button
-                  className="bg-primary hover:bg-primary/90 text-white shadow-lg hover:shadow-xl transition-all duration-300 font-hind px-3 py-1 h-7 text-xs md:h-11 md:px-8 md:text-lg"
-                >
-                  दान करें 🙏
-                </Button>
-              </a>
-            </div>
+          <p className="text-white/95 text-sm md:text-lg lg:text-xl font-hind leading-relaxed md:leading-loose max-w-xl mx-auto md:mx-0 drop-shadow-md mb-8">
+            प्रिय भक्तगण,<br />
+            श्री राम नाम विश्व बैंक समिति द्वारा संचालित सेवा कार्यों में जैसे, श्री राम नाम लेखन सामग्री,
+            श्रीराम नाम संग्रहालय, गौशाला, अस्पताल, श्री राम आश्रय, घाट व मंदिर निर्माण, अन्नक्षेत्र,
+            शिक्षण सामग्री, वृक्षारोपण, मोक्षधाम आदि कार्यों में योगदान देकर पुण्य प्राप्त कर सकते है।
+            क्योंकि कलयुग में दान का ही महत्व है।
+          </p>
+
+          <div className="flex flex-wrap justify-center md:justify-start gap-4">
+            <a href="/donation">
+              <Button
+                className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white shadow-xl hover:shadow-2xl transition-all duration-300 font-bold px-8 py-6 text-lg rounded-full border-2 border-white/20"
+              >
+                दान करें 🙏
+              </Button>
+            </a>
           </div>
         </div>
-      </div>
 
-      {/* Floating Decorative ॐ */}
-      <div className="absolute bottom-8 right-8 text-white/10 text-8xl md:text-9xl font-hind select-none animate-slow-float">
-        ॐ
+        {/* Right Image (Ram Ji) */}
+        <div className="w-full md:w-5/12 relative mt-auto md:mt-0 flex justify-center md:justify-end z-10 md:absolute md:bottom-0 md:right-0 pointer-events-none">
+          <img
+            src={ramPic}
+            alt="Prabhu Shri Ram"
+            className="w-[80%] md:w-full max-h-[400px] md:max-h-[650px] object-contain object-bottom drop-shadow-2xl"
+          />
+        </div>
+
       </div>
     </section>
   );
