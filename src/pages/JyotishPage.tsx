@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,6 +7,10 @@ import { MessageCircle, Mail } from "lucide-react";
 const JyotishPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="ज्योतिष सेवा - ज्योतिष परामर्श"
+        description="अपने जीवन की दिशा को समझें — ज्योतिषीय दृष्टिकोण से। कुंडली ज्योतिष और अंक ज्योतिष परामर्श सेवाएं।"
+      />
       <Header />
       <main>
         {/* Hero Section */}

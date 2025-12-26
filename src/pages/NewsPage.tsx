@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import News from "@/components/News";
@@ -5,6 +6,10 @@ import News from "@/components/News";
 const NewsPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="नवीनतम समाचार और अपडेट"
+        description="राम नाम बैंक की नवीनतम खबरें, कार्यक्रम और घोषणाएं। जानिए हमारे हालिया गतिविधियों और आयोजनों के बारे में।"
+      />
       <Header />
       <main>
         <section className="py-16 bg-gradient-to-br from-primary/10 via-accent/10 to-cream">

@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
@@ -7,6 +8,10 @@ import { Card, CardContent } from "@/components/ui/card";
 const YojanaPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="हमारी योजनाएं"
+        description="श्री राम नाम विश्व बैंक समिति की जनहित योजनाओं और कार्यक्रमों की जानकारी। समाज और मानवता के कल्याण के लिए हमारे प्रयास।"
+      />
       <Header />
       <main>
         {/* Header Section */}

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { yojanas } from "@/data/yojanas";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,6 +37,11 @@ const YojanaDetailPage = () => {
 
     return (
         <div className="min-h-screen bg-background">
+            <SEO
+                title={yojana.title}
+                description={`${yojana.title} - श्री राम नाम विश्व बैंक समिति की एक महत्वपूर्ण पहल। हमारे साथ जुड़ें और समाज सेवा में योगदान दें।`}
+                image={yojana.image}
+            />
             <Header />
             <main>
                 {/* Header Section (Title Only) */}

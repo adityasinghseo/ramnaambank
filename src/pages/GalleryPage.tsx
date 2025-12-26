@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
@@ -23,6 +24,10 @@ const GalleryPage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="मीडिया गैलरी"
+        description="मीडिया गैलरी - श्री राम नाम विश्व बैंक समिति के फोटो और वीडियो संग्रह। हमारे आयोजनों की झलकियां देखें।"
+      />
       <Header />
       <main>
         {/* Hero Section */}

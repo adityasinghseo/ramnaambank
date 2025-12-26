@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,6 +11,10 @@ import { Phone, Mail, MapPin, Facebook, Youtube, Instagram } from "lucide-react"
 const AboutPage = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="हमारे बारे में"
+        description="काम से राम की ओर... - श्री राम नाम विश्व बैंक समिति (रजि.) 37 वर्षों से धर्म, भक्ति और आत्मशुद्धि का संदेश प्रसारित कर रही है।"
+      />
       <Header />
 
       <main>
@@ -101,7 +106,7 @@ const AboutPage = () => {
 
                 <div className="md:w-2/3 space-y-4">
                   <h2 className="text-3xl font-bold text-secondary">
-                    परम श्रद्धेय स्वामी रामबाबा जी महाराज
+                    ब्रम्हलीन परम श्रद्धेय स्वामी रामबाबा जी महाराज
                   </h2>
                   <p className="text-lg leading-relaxed">
                     आचार्य श्री रामबाबा जी श्री राम नाम विश्व बैंक समिति के संस्थापक थे।

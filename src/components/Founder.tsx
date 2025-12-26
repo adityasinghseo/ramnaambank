@@ -19,7 +19,7 @@ const Founder = () => {
                 <div className="relative">
                   <img
                     src={founderImage}
-                    alt="परम श्रद्धेय स्वामी रामबाबा जी"
+                    alt="ब्रम्हलीन परम श्रद्धेय स्वामी रामबाबा जी"
                     className="rounded-xl shadow-lg w-full h-auto object-cover"
                   />
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full -z-10"></div>

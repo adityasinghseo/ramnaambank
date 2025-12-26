@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -14,6 +15,10 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="होम पेज"
+        description="श्री राम नाम विश्व बैंक समिति - भक्ति, सेवा और समर्पण का एक अनूठा संगम। हमसे जुड़ें और राम नाम की महिमा का अनुभव करें।"
+      />
       <Header />
       <main>
         <Hero />
@@ -23,7 +28,7 @@ const Index = () => {
         <Faq />
         <Team />
         <Social />
-        <Cta/>
+        <Cta />
         <Events />
         <News />
       </main>

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { client, urlFor } from "@/lib/sanity";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 import { Loader2 } from "lucide-react";
 import { format } from "date-fns";
 
@@ -64,6 +65,11 @@ const NewsDetailPage = () => {
 
     return (
         <div className="min-h-screen flex flex-col">
+            <SEO
+                title={news.title}
+                description={news.description ? news.description.substring(0, 150) + "..." : ""}
+                image={news.image ? urlFor(news.image).url() : undefined}
+            />
             <Header />
             <main className="flex-grow bg-cream pt-24 pb-16">
                 <div className="container mx-auto px-4 max-w-4xl">

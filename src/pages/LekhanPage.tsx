@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -36,6 +37,11 @@ const LekhanPage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="लेखन सामग्री"
+        description="राम नाम लेखन के लिए आवश्यक सभी सामग्री, पुस्तिकाएं और आध्यात्मिक साहित्य यहाँ प्राप्त करें। श्री राम नाम विश्व बैंक समिति।"
+        image={ramnamLekhan}
+      />
       <Header />
       <main>
         {/* Hero Section */}

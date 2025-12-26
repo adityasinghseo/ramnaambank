@@ -82,8 +82,6 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="shrink-0"
                 >
                   <Button

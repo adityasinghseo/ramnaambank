@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 
 import { sendEmail } from "@/lib/email";
 import { Loader2 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const ContactPage = () => {
   const { toast } = useToast();
@@ -56,6 +57,10 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="संपर्क करें"
+        description="हमसे संपर्क करें - श्री राम नाम विश्व बैंक समिति। पता: हरिद्वार, उत्तराखंड। फोन: +91-9045000108"
+      />
       <Header />
       <main>
         {/* Hero Section */}

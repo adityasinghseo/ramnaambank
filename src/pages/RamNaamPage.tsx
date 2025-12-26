@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,6 +32,10 @@ const RamNaamPage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="राम नाम बैंक - राम नाम लेखन"
+        description="राम नाम सो कल्पतरु, कली कल्याण निवासु। राम नाम लेखन से पुण्य अर्जन और मन की शांति पाएं। अभी शुरू करें।"
+      />
       <Header />
       <main>
         {/* Hero Section */}
