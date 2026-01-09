@@ -1,3 +1,4 @@
+// @ts-ignore - WooCommerce package doesn't have proper TypeScript definitions
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 
 // WooCommerce API Configuration
