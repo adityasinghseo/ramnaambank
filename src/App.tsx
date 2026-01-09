@@ -18,7 +18,6 @@ import GalleryPage from "./pages/GalleryPage";
 import NewsPage from "./pages/NewsPage";
 import NewsDetailPage from "./pages/NewsDetailPage";
 import ContactPage from "./pages/ContactPage";
-import ShopPage from "./pages/Shop";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -51,7 +50,6 @@ const AppRoutes = () => (
       <Route path="/news" element={<NewsPage />} />
       <Route path="/news/:slug" element={<NewsDetailPage />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="/shop" element={<ShopPage />} />
       {/* Catch-all route */}
       <Route path="*" element={<NotFound />} />
     </Routes>
