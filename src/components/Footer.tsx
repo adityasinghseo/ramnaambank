@@ -136,20 +136,13 @@ const Footer = () => {
 
               <li className="flex items-start gap-2">
                 <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                <span>
-                  श्री राम नाम विश्व बैंक समिति आश्रम,<br />
-                  बिल्केश्वर बाई पास रोड, निकट वेदाग्रीन बैंकट हाल,<br />
-                  ललतारौ पुल हरिद्वार (उत्तराखंड) 249401
-                </span>
+                <span>{t.footer.address1}</span>
               </li>
               <li>
-                <span>No.7 नई बस्ती रामगढ़ रोड़, खड़खड़ी हरिद्वार (उत्तराखंड) 249401</span>
+                <span>{t.footer.address2}</span>
               </li>
               <li>
-                <span>
-                  8 गोविंदपुरी, रानीपुर मोड, वुडलैंड शोरूम के ऊपर द्वितीय तल,<br />
-                  हरिद्वार उत्तराखंड 249401
-                </span>
+                <span>{t.footer.address3}</span>
               </li>
 
               <li className="flex items-center gap-2">

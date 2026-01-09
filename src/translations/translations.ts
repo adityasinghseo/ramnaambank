@@ -129,7 +129,45 @@ export const translations = {
         faq: {
             title: "प्रायः पूछे जाने वाले प्रश्न (FAQ)",
             subtitle: "आपके मन में उठने वाले सर्वाधिक प्रश्नों के उत्तर यहाँ प्राप्त कर सकते हैं। आज के व्यस्त जीवन में भक्ति और राम नाम ही मन की शांति का सबसे सुंदर माध्यम है।",
-            contactText: "अधिक जानकारी के लिए संपर्क करें:"
+            contactText: "अधिक जानकारी के लिए संपर्क करें:",
+            questions: {
+                q1: {
+                    question: "राम नाम लेखन क्यों करते हैं ?",
+                    answer: "आज के व्यस्ततम समय में जब व्यक्ति अपनी उलझनों में इतना उलझ गया है कि रिश्ते नाते परिवार सभी से दिन प्रतिदिन लगातार दूर होता जा रहा है। सभी के लिए कितना कुछ भी क्यों न कर लिया जाए पर संसार में सिर्फ भगवान के नाम के अलावा कोई अपना नहीं है। इसलिए आप अभी से सचेत हो जाएं और रामनाम का जप, लेखन करना प्रारंभ कर दें। क्योंकि इस कलियुग में सिर्फ और सिर्फ राम नाम ही है जो आपको इस लोक से लेकर परलोक तक तार सकता है।"
+                },
+                q2: {
+                    question: "राम नाम से क्या लाभ है ?",
+                    answer: "राम नाम उस रसगुल्ले की तरह है जोकि मीठा और सिर्फ मीठा है। यानी उसे कभी भी खाओ दिन में या रात में उसका स्वाद सिर्फ मीठा ही होगा। अर्थात् राम नाम कैसे भी लो किसी भी प्रकार से लो उससे केवल आपको लाभ हो लाभ है। नुकसान कुछ नहीं। राम नाम कितना पवित्र और आनंददायक है। इसलिए इस कलियुग में श्री राम नाम की प्रधानता है।"
+                },
+                q3: {
+                    question: "आखिर लिखे हुए राम नाम का क्या होता है ? लेखन पुस्तिका कहां जमा करें ?",
+                    answer: "लिखा हुआ राम नाम सेवा क्षेत्र में विश्व की सबसे बड़ी संस्था श्री राम नाम विश्व बैंक समिति में जमा होता है। संस्था द्वारा वृहद स्तर पर श्री राम नाम संग्रहालय का निर्माण किया जा रहा है जहां आपके द्वारा लिखा गया राम नाम पूरे विधि विधान से सुरक्षित रखा जाता है।"
+                },
+                q4: {
+                    question: "श्री राम नाम विश्व बैंक समिति के पास अब तक कितना राम नाम जमा है ?",
+                    answer: "श्री राम नाम सेवा क्षेत्र में विश्व की सबसे बड़ी संस्था श्री राम नाम विश्व बैंक समिति लगभग पिछले 37 वर्षों से रामनाम का संकलन करती आ रही है। तो जाहिर सी बात है कि संस्था के पास कई लाख करोड़ अरब की संख्या में राम नाम धन जमा है।"
+                },
+                q5: {
+                    question: "इतनी बड़ी संख्या में राम नाम कहां से आता है ?",
+                    answer: "हमारा भारत देश आस्था का देश है। जहां हर व्यक्ति राम नाम से प्रभावित है और अपने घर परिवार और देश में राम राज्य की कल्पना करता है। राम नाम सेवा क्षेत्र की सबसे बड़ी संस्था श्री राम नाम विश्व बैंक समिति से देशभर में लाखों की संख्या में लोग जुड़े हुए है।"
+                },
+                q6: {
+                    question: "राम नाम बैंक कहां है ?",
+                    answer: "मुख्यतः राम नाम बैंक पूरे भारतवर्ष में लगभग हर राज्य में है। लेकिन इन सबका हेड ऑफिस हरिद्वार में स्थित है। जिसका नाम है श्री राम नाम विश्व बैंक समिति। जिनके लगभग पूरे भारत में 275 से ज्यादा शाखाएं है।"
+                },
+                q7: {
+                    question: "श्री राम नाम बैंक से कैसे जुड़ें और कॉन्टेक्ट नंबर क्या है ?",
+                    answer: "यदि आपके पास राम नाम लिखा हुआ है और आप इसे जमा करना चाहते है। या आप नए है और राम नाम लिखना चाहते है तो आप संस्था श्री राम नाम विश्व बैंक समिति के नीचे दिए नंबरों पर संपर्क कर सकते हैं। Contact No. 9045000108 / 8868888601 / 9410110900"
+                },
+                q8: {
+                    question: "लिखे हुए राम नाम का क्या होता है ?",
+                    answer: "जब भी आप राम नाम जमा करते होंगे तो आपके मन में ये सवाल जरूर आया होगा कि आखिर लिखे हुए राम नाम का क्या होता है। इसलिए आपकी संस्था श्री राम नाम विश्व बैंक समिति ने लिखे हुए राम नाम का सबसे ज्यादा सदुपयोग करती है। अभी हाल ही में इन्होंने 51 लाख करोड़ से ज्यादा राम नाम अयोध्या के श्री राम मंदिर में लगवाया है।"
+                },
+                q9: {
+                    question: "भारत में श्री राम नाम संग्रहालय कहां और कैसा होगा ?",
+                    answer: "पूरे भारत के हर राज्य में श्री राम नाम बैंक की शाखाएं फैली हुई है। लेकिन इनका मुख्यालय हरिद्वार में स्थित है। जहां करोड़ों अरबों की संख्या में राम नाम जमा होता है। और इसका भव्य और दिव्य संग्रहालय हरिद्वार में बनेगा जोकि अपने आप में अद्भुत आकर्षण का केंद्र होगा।"
+                }
+            }
         },
         // Team Section
         team: {
@@ -201,7 +239,10 @@ export const translations = {
             contactUs: "संपर्क करें",
             copyright: "सर्वाधिकार सुरक्षित",
             privacyPolicy: "गोपनीयता नीति",
-            termsConditions: "नियम और शर्तें"
+            termsConditions: "नियम और शर्तें",
+            address1: "श्री राम नाम विश्व बैंक समिति आश्रम, बिल्केश्वर बाई पास रोड, निकट वेदाग्रीन बैंकट हाल, ललतारौ पुल हरिद्वार (उत्तराखंड) 249401",
+            address2: "No.7 नई बस्ती रामगढ़ रोड़, खड़खड़ी हरिद्वार (उत्तराखंड) 249401",
+            address3: "8 गोविंदपुरी, रानीपुर मोड, वुडलैंड शोरूम के ऊपर द्वितीय तल, हरिद्वार उत्तराखंड 249401"
         },
         // Common
         common: {
@@ -350,7 +391,45 @@ export const translations = {
         faq: {
             title: "Frequently Asked Questions (FAQ)",
             subtitle: "You can get answers to the most common questions that arise in your mind here. In today's busy life, devotion and Ram Naam are the most beautiful means of peace of mind.",
-            contactText: "For more information contact:"
+            contactText: "For more information contact:",
+            questions: {
+                q1: {
+                    question: "Why do we write Ram Naam?",
+                    answer: "In today's busiest times when a person is so entangled in his problems that he is continuously moving away from relationships, family, everyone day by day. No matter how much you do for everyone, but in the world there is no one except God's name. Therefore, be alert from now and start chanting and writing Ram Naam. Because in this Kaliyuga, only Ram Naam can take you from this world to the next world."
+                },
+                q2: {
+                    question: "What are the benefits of Ram Naam?",
+                    answer: "Ram Naam is like that rasgulla which is sweet and only sweet. That means whenever you eat it, day or night, its taste will only be sweet. That is, take Ram Naam in any way, you will only benefit from it. No harm. How pure and blissful Ram Naam is. Therefore, Shri Ram Naam has prominence in this Kaliyuga."
+                },
+                q3: {
+                    question: "What happens to the written Ram Naam? Where to submit the writing booklet?",
+                    answer: "The written Ram Naam is deposited in the world's largest organization in the Ram Naam service area, Shri Ram Naam Vishwa Bank Samiti. The organization is building a grand Ram Naam museum where your written Ram Naam is kept safe with complete procedures."
+                },
+                q4: {
+                    question: "How much Ram Naam has been deposited with Shri Ram Naam Vishwa Bank Samiti so far?",
+                    answer: "Shri Ram Naam Vishwa Bank Samiti, the world's largest organization in the Ram Naam service area, has been collecting Ram Naam for the past 37 years. So it is obvious that the organization has Ram Naam wealth deposited in the number of lakhs, crores and billions."
+                },
+                q5: {
+                    question: "Where does Ram Naam come from in such large numbers?",
+                    answer: "Our India is a country of faith. Where every person is influenced by Ram Naam and imagines Ram Rajya in his home, family and country. Millions of people across the country are associated with Shri Ram Naam Vishwa Bank Samiti, the largest organization in the Ram Naam service area."
+                },
+                q6: {
+                    question: "Where is Ram Naam Bank?",
+                    answer: "Mainly Ram Naam Bank is in almost every state across India. But the head office of all these is located in Haridwar. Whose name is Shri Ram Naam Vishwa Bank Samiti. Which has more than 275 branches across India."
+                },
+                q7: {
+                    question: "How to join Shri Ram Naam Bank and what is the contact number?",
+                    answer: "If you have written Ram Naam and want to deposit it. Or you are new and want to write Ram Naam, then you can contact the organization Shri Ram Naam Vishwa Bank Samiti on the numbers given below. Contact No. 9045000108 / 8868888601 / 9410110900"
+                },
+                q8: {
+                    question: "What happens to the written Ram Naam?",
+                    answer: "Whenever you deposit Ram Naam, this question must have arisen in your mind that what happens to the written Ram Naam. Therefore, your organization Shri Ram Naam Vishwa Bank Samiti makes the best use of the written Ram Naam. Recently, they have installed more than 51 lakh crore Ram Naam in Shri Ram Temple in Ayodhya."
+                },
+                q9: {
+                    question: "Where and what will be the Shri Ram Naam Museum in India?",
+                    answer: "Shri Ram Naam Bank branches are spread across every state in India. But their headquarters is located in Haridwar. Where Ram Naam is deposited in the number of crores and billions. And its grand and divine museum will be built in Haridwar which will be a center of wonderful attraction in itself."
+                }
+            }
         },
         // Team Section
         team: {
@@ -422,7 +501,10 @@ export const translations = {
             contactUs: "Contact Us",
             copyright: "All Rights Reserved",
             privacyPolicy: "Privacy Policy",
-            termsConditions: "Terms & Conditions"
+            termsConditions: "Terms & Conditions",
+            address1: "Shri Ram Naam Vishwa Bank Samiti Ashram, Bilkeshwar Bypass Road, Near Vedagreen Banquet Hall, Laltarao Bridge Haridwar (Uttarakhand) 249401",
+            address2: "No.7 Nai Basti Ramgarh Road, Khadkhadi Haridwar (Uttarakhand) 249401",
+            address3: "8 Govindpuri, Ranipur Mod, Above Woodland Showroom Second Floor, Haridwar Uttarakhand 249401"
         },
         // Common
         common: {
