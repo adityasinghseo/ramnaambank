@@ -11,13 +11,16 @@ import Cta from "@/components/CallToAction"
 import Events from "@/components/Events";
 import News from "@/components/News";
 import Footer from "@/components/Footer";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Index = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen">
       <SEO
-        title="होम पेज"
-        description="श्री राम नाम विश्व बैंक समिति - भक्ति, सेवा और समर्पण का एक अनूठा संगम। हमसे जुड़ें और राम नाम की महिमा का अनुभव करें।"
+        title={t.pages.home}
+        description={t.pages.homeDescription}
       />
       <Header />
       <main>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const faqs = [
   {
@@ -214,6 +215,7 @@ const faqs = [
 ];
 
 const FAQ = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
@@ -222,12 +224,11 @@ const FAQ = () => {
         {/* Heading */}
         <div className="text-center mb-14 animate-fade-in-up">
           <h2 className="text-3xl md:text-5xl font-bold text-secondary mb-4 font-hind">
-            प्रायः पूछे जाने वाले प्रश्न (FAQ)
+            {t.faq.title}
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-foreground/80 max-w-3xl mx-auto font-hind leading-relaxed">
-            आपके मन में उठने वाले सर्वाधिक प्रश्नों के उत्तर यहाँ प्राप्त कर सकते हैं।
-            आज के व्यस्त जीवन में भक्ति और राम नाम ही मन की शांति का सबसे सुंदर माध्यम है।
+            {t.faq.subtitle}
           </p>
         </div>
 
@@ -261,7 +262,7 @@ const FAQ = () => {
         {/* Bottom Note */}
         <div className="text-center mt-12 animate-fade-in-up">
           <p className="text-lg text-muted-foreground font-hind">
-            अधिक जानकारी के लिए संपर्क करें:{" "}
+            {t.faq.contactText}{" "}
             <span className="text-primary font-semibold">
               9045000108 / 8868888601 / 9410110900
             </span>

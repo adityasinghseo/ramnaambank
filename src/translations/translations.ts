@@ -125,6 +125,32 @@ export const translations = {
             title: "श्री राम नाम विश्व बैंक समिति के मुख्य कार्य एवं योजनाएँ",
             viewAll: "सभी योजनाएं देखें"
         },
+        // FAQ Section
+        faq: {
+            title: "प्रायः पूछे जाने वाले प्रश्न (FAQ)",
+            subtitle: "आपके मन में उठने वाले सर्वाधिक प्रश्नों के उत्तर यहाँ प्राप्त कर सकते हैं। आज के व्यस्त जीवन में भक्ति और राम नाम ही मन की शांति का सबसे सुंदर माध्यम है।",
+            contactText: "अधिक जानकारी के लिए संपर्क करें:"
+        },
+        // Team Section
+        team: {
+            title: "हमारी टीम",
+            subtitle: "हमारी टीम समर्पित, अनुभवी और आध्यात्मिक भावना से ओत-प्रोत उन व्यक्तियों का समूह है जो श्री राम नाम विश्व बैंक समिति के उद्देश्य को साकार करने में निरंतर कार्यरत हैं। प्रत्येक सदस्य अपने क्षेत्र में निपुण है और संस्था के हर पहलू — राम नाम लेखन, आयोजन, प्रचार-प्रसार, तकनीकी सहायता और सेवा कार्य — में सक्रिय भागीदारी निभाता है।",
+            member1: {
+                name: "श्री सुमित तिवारी जी",
+                role: "राष्ट्रीय अध्यक्ष",
+                imageAlt: "श्री सुमित तिवारी जी"
+            },
+            member2: {
+                name: "श्री विकास गर्ग जी",
+                role: "राष्ट्रीय महासचिव",
+                imageAlt: "श्री विकास गर्ग जी"
+            }
+        },
+        // Page Titles
+        pages: {
+            home: "होम पेज",
+            homeDescription: "श्री राम नाम विश्व बैंक समिति - भक्ति, सेवा और समर्पण का एक अनूठा संगम। हमसे जुड़ें और राम नाम की महिमा का अनुभव करें।"
+        },
         // Donation Section
         donation: {
             title: "दान करें",
@@ -319,6 +345,32 @@ export const translations = {
         socialInitiatives: {
             title: "Main Works and Schemes of Shri Ram Naam Vishwa Bank Samiti",
             viewAll: "View All Schemes"
+        },
+        // FAQ Section
+        faq: {
+            title: "Frequently Asked Questions (FAQ)",
+            subtitle: "You can get answers to the most common questions that arise in your mind here. In today's busy life, devotion and Ram Naam are the most beautiful means of peace of mind.",
+            contactText: "For more information contact:"
+        },
+        // Team Section
+        team: {
+            title: "Our Team",
+            subtitle: "Our team is a group of dedicated, experienced and spiritually motivated individuals who are continuously working to realize the objectives of Shri Ram Naam Vishwa Bank Samiti. Each member is proficient in their field and actively participates in every aspect of the organization — Ram Naam writing, events, publicity, technical support and service work.",
+            member1: {
+                name: "Shri Sumit Tiwari Ji",
+                role: "National President",
+                imageAlt: "Shri Sumit Tiwari Ji"
+            },
+            member2: {
+                name: "Shri Vikas Garg Ji",
+                role: "National General Secretary",
+                imageAlt: "Shri Vikas Garg Ji"
+            }
+        },
+        // Page Titles
+        pages: {
+            home: "Home Page",
+            homeDescription: "Shri Ram Naam Vishwa Bank Samiti - A unique confluence of devotion, service and dedication. Join us and experience the glory of Ram Naam."
         },
         // Donation Section
         donation: {
