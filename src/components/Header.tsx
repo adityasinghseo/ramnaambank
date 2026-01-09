@@ -34,9 +34,9 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-[#FF7E26] shadow-md flex flex-col items-center pt-2 pb-1">
-      {/* Top Section: Social Media (Left) + Logo (Center) + Contact (Right) */}
-      <div className="w-full px-4 md:px-8 py-2">
+    <header className="sticky top-0 z-50 w-full shadow-md">
+      {/* ROW 1: Social Media (Left) + Logo (Center) + Language Toggle (Right) - Orange Background */}
+      <div className="w-full bg-[#FF7E26] px-4 md:px-8 py-3">
         <div className="max-w-7xl mx-auto grid grid-cols-3 items-center gap-4">
           {/* Social Media Icons - Left */}
           <div className="flex items-center gap-2 md:gap-3 justify-start">
@@ -78,17 +78,14 @@ const Header = () => {
             </a>
           </div>
 
-          {/* Logo and Name - Center */}
-          <div className="flex flex-col items-center justify-center">
-            <Link to="/" className="flex flex-col items-center gap-1">
+          {/* Logo - Center */}
+          <div className="flex items-center justify-center">
+            <Link to="/" className="flex items-center justify-center">
               <img
                 src={logo}
                 alt={t.header.organizationName}
-                className="h-16 md:h-20 w-auto bg-white p-1 rounded-full shadow-sm hover:scale-105 transition-transform duration-300"
+                className="h-16 md:h-20 w-auto bg-white p-1 rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
               />
-              <h1 className="font-hind text-[#FF7E26] bg-white px-3 py-1 rounded-md text-sm md:text-lg font-bold text-center tracking-wide shadow-sm whitespace-nowrap">
-                {t.header.organizationName}
-              </h1>
             </Link>
           </div>
 
@@ -96,20 +93,27 @@ const Header = () => {
           <div className="flex items-center justify-end">
             <button
               onClick={toggleLanguage}
-              className="flex items-center gap-1 md:gap-2 text-white hover:text-white/80 transition-colors text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-md"
+              className="flex items-center gap-1 md:gap-2 text-white hover:text-white/80 transition-colors text-xs md:text-sm bg-white/10 hover:bg-white/20 px-3 py-1.5 rounded-md font-hind"
               aria-label="Toggle Language"
             >
               <Languages className="w-4 h-4 md:w-5 md:h-5" />
-              <span className="font-hind">
-                {t.header.language}
-              </span>
+              <span>{t.header.language}</span>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Bottom Section: Navigation */}
-      <nav className="w-full border-t border-white/20">
+      {/* ROW 2: Organization Name - White Background, Orange Text, Edge to Edge */}
+      <div className="w-full bg-white py-3">
+        <div className="w-full flex items-center justify-center">
+          <h1 className="font-hind text-[#FF7E26] text-xl md:text-3xl lg:text-4xl font-bold tracking-wide text-center">
+            {t.header.organizationName}
+          </h1>
+        </div>
+      </div>
+
+      {/* ROW 3: Navigation Menu - As it is */}
+      <nav className="w-full bg-[#FF7E26] border-t border-white/20">
         <div className="flex overflow-x-auto no-scrollbar py-2 px-4 gap-2 md:justify-center items-center w-full">
           {navItems.map((item) => {
             const isActive = location.pathname === item.href;
@@ -121,21 +125,30 @@ const Header = () => {
                   <DropdownMenuTrigger asChild>
                     <Button
                       variant="ghost"
-                      size="sm"
-                      className="font-hind text-sm md:text-base whitespace-nowrap px-4 rounded-full transition-all text-white hover:text-white hover:bg-white/20"
+                      className={cn(
+                        "text-white hover:bg-white/20 hover:text-white font-hind text-xs md:text-sm whitespace-nowrap transition-all duration-300",
+                        isActive && "bg-white/20 font-bold"
+                      )}
                     >
                       {item.label}
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent>
+                  <DropdownMenuContent className="bg-white shadow-lg border border-primary/20">
                     <DropdownMenuItem asChild>
-                      <Link to="/membership" className="font-hind cursor-pointer w-full">
-                        {t.header.onlineForm}
+                      <Link
+                        to="/membership"
+                        className="font-hind text-sm hover:bg-primary/10 cursor-pointer"
+                      >
+                        {t.header.onlineMembership}
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
-                      <a href={offlineForm} target="_blank" rel="noopener noreferrer" className="font-hind cursor-pointer w-full">
-                        {t.header.offlineForm}
+                      <a
+                        href={offlineForm}
+                        download
+                        className="font-hind text-sm hover:bg-primary/10 cursor-pointer"
+                      >
+                        {t.header.offlineMembership}
                       </a>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -143,26 +156,20 @@ const Header = () => {
               );
             }
 
-            // @ts-ignore
+            // Regular nav items
             if (item.isExternal) {
               return (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="shrink-0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "text-white hover:bg-white/20 px-3 py-2 rounded-md font-hind text-xs md:text-sm whitespace-nowrap transition-all duration-300",
+                    isActive && "bg-white/20 font-bold"
+                  )}
                 >
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className={cn(
-                      "font-hind text-sm md:text-base whitespace-nowrap px-4 rounded-full transition-all",
-                      isActive
-                        ? "bg-white text-[#FF7E26] shadow-md"
-                        : "text-white hover:text-white hover:bg-white/20"
-                    )}
-                  >
-                    {item.label}
-                  </Button>
+                  {item.label}
                 </a>
               );
             }
@@ -171,20 +178,12 @@ const Header = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className="shrink-0"
+                className={cn(
+                  "text-white hover:bg-white/20 px-3 py-2 rounded-md font-hind text-xs md:text-sm whitespace-nowrap transition-all duration-300",
+                  isActive && "bg-white/20 font-bold"
+                )}
               >
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className={cn(
-                    "font-hind text-sm md:text-base whitespace-nowrap px-4 rounded-full transition-all",
-                    isActive
-                      ? "bg-white text-[#FF7E26] shadow-md"
-                      : "text-white hover:text-white hover:bg-white/20"
-                  )}
-                >
-                  {item.label}
-                </Button>
+                {item.label}
               </Link>
             );
           })}

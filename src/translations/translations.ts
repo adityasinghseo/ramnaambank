@@ -17,6 +17,8 @@ export const translations = {
             contact: "संपर्क करें",
             onlineForm: "ऑनलाइन फॉर्म",
             offlineForm: "ऑफलाइन फॉर्म",
+            onlineMembership: "ऑनलाइन सदस्यता",
+            offlineMembership: "ऑफलाइन सदस्यता फॉर्म",
             language: "हिन्दी"
         },
         // Hero Section
@@ -279,6 +281,8 @@ export const translations = {
             contact: "Contact Us",
             onlineForm: "Online Form",
             offlineForm: "Offline Form",
+            onlineMembership: "Online Membership",
+            offlineMembership: "Offline Membership Form",
             language: "English"
         },
         // Hero Section
